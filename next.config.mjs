@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: true, // double-invokingが有効化されていると仕様としてコンポーネントが2回レンダリングされることになる
 };
 
 export default nextConfig;

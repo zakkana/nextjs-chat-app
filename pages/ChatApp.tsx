@@ -9,7 +9,7 @@ import useAuth from "@/hooks/useAuth";
 import { useRouter } from "next/router";
 import { dateToString } from "@/utils/dateToString";
 import Layout from "../components/layouts/Layout";
-import { Sidebar } from "@/components/Sidebar";
+import { Sidebar } from "@/components/sidebar/Sidebar";
 
 const ChatApp = () => {
   const [inputText, setInputText] = useState(""); // 入力テキスト

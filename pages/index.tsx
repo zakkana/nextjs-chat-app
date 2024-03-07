@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import useAuth from "@/hooks/useAuth";
-import { Sidebar } from "@/components/Sidebar";
+import { Sidebar } from "@/components/sidebar/Sidebar";
 import { useRouter } from "next/navigation";
 import Layout from "@/components/layouts/Layout";
 import { css } from "@emotion/react";

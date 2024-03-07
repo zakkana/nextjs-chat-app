@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import LogoutButton from "../LogoutButton";
 import useAuth from "@/hooks/useAuth";
 import Link from "next/link";
-import { Sidebar } from "../Sidebar";
+import { Sidebar } from "../sidebar/Sidebar";
 
 type Props = {
   children: React.ReactNode;
@@ -34,8 +34,9 @@ export default Layout;
 const wrapper = css`
   display: flex;
   flex-direction: column;
-  max-height: 100vh;
+  height: 100vh;
   overflow: hidden;
+  border-bottom: 1px solid black;
   // justify-content: space-between;
 `;
 const main = css`
@@ -56,7 +57,7 @@ const main = css`
 `;
 
 const header = css`
-  background-color: #ADD8E6;
+  background-color: #313338;
 `;
 
 const headerContainer = css`
@@ -69,7 +70,7 @@ const headerContainer = css`
 const title = css`
   font-size: 28px;
   a {
-    color: #333;
+    color: white;
     text-decoration: none;
   }
 `;

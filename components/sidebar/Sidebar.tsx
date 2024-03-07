@@ -4,9 +4,8 @@ import { css } from "@emotion/react";
 import GroupIcon from '@mui/icons-material/Group';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import TelegramIcon from '@mui/icons-material/Telegram';
-import { Component, ReactNode, useState } from "react";
-import ChatApp from "../pages/ChatApp";
 import { useRouter } from "next/router";
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 
 export const Sidebar = () => {
 
@@ -23,6 +22,7 @@ export const Sidebar = () => {
     ]
 
     return (
+
         <ul css={ul} >
             {Menus.map((menu, index) => (
                 <li
@@ -47,10 +47,10 @@ const ul = css`
     max-height: 100vh;
     width: 10%;
     overflow: auto;
-    background-color: #BFEE90;
-    border-top: 1px solid white;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
+    background-color: #2b2d31;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
     padding: 0;
     margin: 0;
 `;
@@ -70,5 +70,4 @@ const li = css`
         margin-bottom: 30px;
         // margin-bottom: 1px solid #000000;
     }
-
 `

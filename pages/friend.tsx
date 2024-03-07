@@ -22,7 +22,7 @@ function Friend() {
     // ログインしている場合のみチャットページを表示
     return (
         <Layout>
-            <Sidebar />
+            {/* <Sidebar /> */}
             <div css={wrapper}>
                 <ul css={ul}>
                     {Menus.map((menu, index) => (
@@ -54,7 +54,7 @@ const wrapper = css`
     margin-inline: auto;
     overflow: auto;
     height: 100%;
-    width: 90%;
+    width: 100%;
     border-color: black;
     border: 1px solid black;
     border-left: none;

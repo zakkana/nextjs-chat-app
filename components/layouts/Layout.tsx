@@ -22,8 +22,10 @@ const Layout = ({ children }: Props) => {
                     {isLogin && <LogoutButton />}
                 </div>
             </header>
-            {/* <Sidebar/> */}
-            <main css={main}>{children}</main>
+            <div css={content}>
+                <Sidebar />
+                <main css={main}>{children}</main>
+            </div>
         </div>
     );
 };
@@ -39,10 +41,17 @@ const wrapper = css`
     /* border-bottom: 1px solid black; */
     // justify-content: space-between;
 `;
+
+const content = css`
+    display: flex;
+    flex-direction: row;
+`;
+
 const main = css`
     display: flex;
     flex-direction: row;
     height: 100vh;
+    width: 90%;
     // width: min(100%, 1000px);
     // border: 1px solid #333;
     // border-radius: 10px;

@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const OnlineFrind = () => {
-  return (
-    <div>
-      オンラインの内容です。
-    </div>
-  )
-}
+    return <div>オンラインの内容です。</div>;
+};
 
-export default OnlineFrind
+export default OnlineFrind;
